@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Kanban Minimalista</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Kanban Board</h1>
+  <div class="board">
+    <div class="column" data-status="todo">
+      <h2>A Fazer</h2>
+      <div class="task-list" id="todo"></div>
+      <button class="add-btn" data-column="todo">+ Adicionar</button>
+    </div>
+
+    <div class="column" data-status="doing">
+      <h2>Fazendo</h2>
+      <div class="task-list" id="doing"></div>
+      <button class="add-btn" data-column="doing">+ Adicionar</button>
+    </div>
+
+    <div class="column" data-status="done">
+      <h2>Feito</h2>
+      <div class="task-list" id="done"></div>
+      <button class="add-btn" data-column="done">+ Adicionar</button>
+    </div>
+  </div>
+
+  <script src="dist/main.js" defer></script>
+</body>
+</html>
